@@ -68,7 +68,7 @@ class BigView : View, GestureDetector.OnGestureListener, View.OnTouchListener {
 
         //开启复用
         mOptions.inMutable = true
-        //设置格式为RGB-565  一个像素2个字节
+        //设置格式为RGB-565  一个像素2个字节 相对于ARGB-8888减少一半内存使用
         mOptions.inPreferredConfig = Bitmap.Config.RGB_565
 
         mOptions.inJustDecodeBounds = false
